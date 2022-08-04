@@ -18,7 +18,7 @@ public class KIA {
 	
 	private KIA() {
 		carArray = new Car[10];
-		autoCode = 2022000;
+		autoCode = 20220000;
 	}
 	
 	public static KIA getInstance() {
@@ -31,15 +31,15 @@ public class KIA {
 	public Car produceCar(String model) {
 		int carNumber = ++autoCode;
 		String company = getClass().getSimpleName();
-				
-//		Car car= new Car(carNumber, company, model);
+		
+//		Car car = new Car(carNumber, company, model);
 		
 		Car car = Car.builder()
 				.carNumber(carNumber)
 				.company(company)
 				.model(model)
 				.build();
-			
+		
 		if(addCar(car)) {
 			return car;
 		}
@@ -48,14 +48,15 @@ public class KIA {
 	}
 	
 	private boolean addCar(Car car) {
-		for(int i=0; i<carArray.length; i++) {
+		for(int i = 0; i < carArray.length; i++) {	
 			if(carArray[i] == null) {
-				carArray[i]=car;
+				carArray[i] = car;
 				System.out.println("배열에 차량 추가 완료.");
 				return true;
+			}
 		}
 		System.out.println("배열에 공간이 없습니다.");
 		return false;
 	}
-
+		
 }

@@ -63,7 +63,7 @@ public class UserArrayList2 {
 		
 		for(User user: userList) {
 			if(user.getUsername().equals(username)) {
-				System.out.print("비밀번호:");
+				System.out.print("비밀번호: ");
 				password=scanner.nextLine();
 				
 				if(user.getPassword().equals(password)) {
@@ -103,7 +103,7 @@ public class UserArrayList2 {
 			}else if(select.equals("3")) {
 				userArrayList.removeUser();
 			}else if(select.equals("4")) {
-				System.out.println("포그로매 종료");
+				System.out.println("포로그램 종료");
 				break;
 			}else {
 				System.out.println("해당 정보는 사용 불가");

@@ -8,7 +8,7 @@ public class KeyBoard implements USB{
 	}
 	
 	@Override
-	public void connect() {
+	public void disConnect() {
 		System.out.println("키보드 연결 해제");
 	}
 

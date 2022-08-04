@@ -1,7 +1,5 @@
 package J13_최상위클래스;
 
-import java.util.Objects;
-
 public class ToString {
 	
 	private int a;
@@ -20,18 +18,8 @@ public class ToString {
 	
 //	@Override
 //	public String toString() {
-//		return "a: " + a + ", b" + b;
+//		return "a: " + a + ", b: " + b;
 //	}
-
-	@Override
-	public int hashCode() {
-		return Objects.hash(name, studentCode);
-	}
-	
-	@Override
-	public code 
-	
-	
 	
 
 }

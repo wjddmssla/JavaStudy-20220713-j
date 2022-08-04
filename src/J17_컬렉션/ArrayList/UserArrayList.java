@@ -114,6 +114,7 @@ public class UserArrayList {
 //			Object username;
 //			if (username.equals(userList.get(i).getName())) {
 //				userList.remove(i);
+		
 //				System.out.println("삭제되었습니다!");
 //			} else {
 //				System.out.println("회원이 존재하지 않습니다.");
@@ -161,73 +162,6 @@ public class UserArrayList {
 			}
 			
 		}
-		
-
-		
-		
-//		for(User user : UserArrayList) {
-//			System.out.println(user);
-//		}
-		
-//		UserArrayList.remove(1);
-//		UserArrayList.clear();
-//		
-		
-		
-//		System.out.println("프로그램 종료");
-//		break;
-		
-//		Scanner sc = new Scanner(System.in);
-//		int n = 0;
-//		
-//		Boolean flag = true;
-//		while (flag) {
-//			System.out.print("아이디 입력:");
-//			n = sc.nextInt();
-//
-//			switch (n) {
-//			case 1: // 추가
-//				System.out.println();
-//				System.out.print("아이디: ");
-//				String username = sc.next();
-//				System.out.print("비밀번호: ");
-//				String password = sc.next();
-//				System.out.print("이름: ");
-//				String name = sc.next();
-//				System.out.print("이메일: ");
-//				String email = sc.next();
-//				users.add(new User(username, password, name, email));
-//				System.out.println("사용자 추가");
-//				break;
-//
-//			case 2: // 삭제
-//				System.out.println();
-//				System.out.println("삭제할 사용자: ");
-//				System.out.print("이름: ");
-//				name = sc.next();
-//				for (int i = 0; i < users.size(); i++) {
-//					if (name.equals(users.get(i).getName())) {
-//						users.remove(i);
-//						System.out.println("삭제되었습니다!");
-//					} else
-//						System.out.println("회원이 존재하지 않습니다.");
-//				}
-//				break;
-//				
-//			case 3: // 리스트 출력
-//				System.out.println();
-//				for (User user : users)
-//					System.out.println(user);
-//				
-//			case 4:
-//				flag = false;
-//				System.out.println("시스템이 종료되었습니다.");
-//				break;
-
-		
-		
-		
-		
 		
 	}
 
