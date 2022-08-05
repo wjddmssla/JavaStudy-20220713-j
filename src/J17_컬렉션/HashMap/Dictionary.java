@@ -21,7 +21,7 @@ public class Dictionary {
 		userDict.put(username, User.builder().username(username).password("1234").build());
 		
 		if(userDict.containsKey("junil")) {
-			System.out.println(userDict.get("aaa"));
+			System.out.println(userDict.get("junil"));
 		}
 		
 		Scanner scanner = new Scanner(System.in);
@@ -55,11 +55,6 @@ public class Dictionary {
 		 * 골프->golf
 		 */
 
-	}
-
-	private static void While(boolean b) {
-		// TODO Auto-generated method stub
-		
 	}
 
 }
