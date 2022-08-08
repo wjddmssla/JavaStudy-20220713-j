@@ -1,6 +1,5 @@
 package J18_JSON;
 
-import java.io.Serial;
 import java.util.List;
 
 import com.google.gson.annotations.Expose;
