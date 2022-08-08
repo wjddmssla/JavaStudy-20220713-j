@@ -1,5 +1,6 @@
 package J19_익명클래스.람다식;
 
+import java.util.function.Consumer;
 import java.util.function.Function;
 
 public class StrTestMain {
@@ -23,7 +24,12 @@ public class StrTestMain {
 		
 		System.out.println(gread);
 		
-		Function<Integer, String> f= (100) -> Integer.toString(num);
+		Consumer<String> consumer = data -> {System.out.println("data: " + data);};
+		
+		consumer.accept("김준일");
+		consumer.andThen(consumer).andThen(consumer).accept("김준이");
+		
+		Function<Integer, String> f = (num) -> Integer.toString(num);
 		
 		System.out.println(f.apply(100));
 	}

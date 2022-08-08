@@ -15,25 +15,23 @@ public class PrincipalMain {
 				.roles("ROLE_USER")
 				.build();
 		
-		
 		PrincipalDetailse principalDetailse = new PrincipalDetailse(user);
-		PrincipalDetailse principalDetailse2 = new PrincipalDetails(user2);
+		PrincipalDetailse principalDetailse2 = new PrincipalDetailse(user2);
 		
-		principalDetailse.getUsername();
-		
+		printPrincipalData(principalDetailse);
+		printPrincipalData(principalDetailse2);
+
 	}
-	
-	public static void printPrincipalData(principalDetailse principalDetailse) {
-		System.out.println("[principla 정보 출력");
+
+	public static void printPrincipalData(PrincipalDetailse principalDetailse) {
+		System.out.println("[ principla 정보 출력 ]");
 		
 		System.out.println("username: " + principalDetailse.getUsername());
 		System.out.println("password: " + principalDetailse.getPassword());
 		
-		for(GrantedAuthority grantedAuthority: principalDetailse.getAuthorities()) {
+		for(GrantedAuthority grantedAuthority : principalDetailse.getAuthorities()) {
 			System.out.println("권한: " + grantedAuthority.getAuthority());
 		}
+		System.out.println();
 	}
-	
-	
-
 }
